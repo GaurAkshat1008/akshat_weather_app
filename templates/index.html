@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>
+  Home Page
+</title>
+<link rel="icon" href='https://www.google.com/search?q=sunny+weather+images&client=opera&hs=GNo&sxsrf=ALeKk02GpxfrmGW9oZeFLfDesID8dTh6_w:1614534250616&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj99fDjkI3vAhXByzgGHRDMAVMQ_AUoAXoECA8QAw&biw=1366&bih=627#imgrc=ToC_fe7NnlKAYM' type="image/x-icon">
+{% endblock %}
+
+{% block body %}
+<body style="background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+  
+  <br><br><br>  
+  <main role="main">
+    <div class="jumbotron">
+      <div class="col-sm-8 mx-auto">
+        <h1>Home Page</h1>
+        <p>
+          This is my new web app for checking the weather around the globe. If you want to contact us you can write to us <a href="https://www.akshatdevelopers.com">here</a>
+        </p>
+        <p>
+          <a class="btn btn-primary" href="/weather" role="button">Check Weather</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+  {% endblock %}
