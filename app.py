@@ -1,12 +1,9 @@
 import requests
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
 import json
 import time
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weather.db'
-db=SQLAlchemy(app)
 
 @app.route('/')
 def home():
